@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
         {
             Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
            // Toast.makeText(this, "First if " + tag.toString(), Toast.LENGTH_SHORT).show();
-            GetDataFromTag(tag,intent);
             Parcelable[] rawMsgs = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
 
             byte[] tagId = tag.getId();
